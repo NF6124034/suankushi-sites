@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>蒜串屋 網站風格提案｜三選一</title>
+<meta name="description" content="蒜串屋餐廳網站的三種風格提案：招牌點菜單、鹹酥雞攤玻璃櫃、樂燒煙燻高級串燒。每一版的客群、品牌故事與特色。">
+<link rel="icon" href="v1/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@900&display=swap">
+<style>
+  :root {
+    --bg: #141210; --text: #f1ece4; --muted: #b8b0a4; --line: #3a342f;
+    --v1: #f6c400; --v1-ink: #17130f;
+    --v2: #ad1219; --v2-gold: #ffd21f;
+    --v3: #0f0d0c; --v3-ember: #ea5b1d; --v3-glaze: #e6e1d8;
+    --gutter: clamp(16px, 4vw, 56px);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.75 "Noto Sans TC", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  img { display: block; max-width: 100%; }
+  :focus-visible { outline: 3px solid var(--v1); outline-offset: 3px; }
+  .wrap { width: min(1240px, 100% - 2 * var(--gutter)); margin-inline: auto; }
+
+  header { padding: clamp(56px, 9vw, 120px) 0 clamp(40px, 6vw, 72px); }
+  header h1 { margin: 0; font-family: "Noto Serif TC", serif; font-weight: 900; font-size: clamp(40px, 7vw, 88px); line-height: 1.1; letter-spacing: 0.02em; }
+  header p { margin: 18px 0 0; max-width: 40em; color: var(--muted); font-size: 18px; }
+  .jump { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+  .jump a { text-decoration: none; padding: 10px 18px; border-radius: 999px; font-weight: 700; font-size: 15px; }
+  .jump a:nth-child(1) { background: var(--v1); color: var(--v1-ink); }
+  .jump a:nth-child(2) { background: var(--v2); color: var(--v2-gold); }
+  .jump a:nth-child(3) { background: var(--v3); color: var(--v3-glaze); box-shadow: inset 0 0 0 1px var(--v3-ember); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 0 0 clamp(48px, 7vw, 96px); }
+  caption { text-align: left; font-weight: 900; font-size: 22px; padding-bottom: 12px; }
+  th, td { text-align: left; vertical-align: top; padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); }
+  thead th { font-size: 14px; color: var(--muted); font-weight: 500; }
+  tbody th { color: var(--muted); font-weight: 500; white-space: nowrap; }
+  .scroll { overflow-x: auto; }
+  .scroll table { min-width: 760px; }
+
+  .v { padding: clamp(56px, 8vw, 110px) 0; }
+  .v1 { background: var(--v1); color: var(--v1-ink); }
+  .v2 { background: linear-gradient(180deg, var(--v2), #820b11); color: #fff; }
+  .v3 { background: var(--v3); color: var(--v3-glaze); border-top: 1px solid #3a3431; }
+  .v-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 72px); align-items: start; }
+  .v figure { margin: 0; position: sticky; top: 24px; }
+  .v figure img { border-radius: 8px; box-shadow: 0 30px 60px -30px rgba(0,0,0,0.7); }
+  .v figure figcaption { font-size: 13px; margin-top: 8px; opacity: 0.8; }
+  .v h2 { margin: 0; font-weight: 900; font-size: clamp(34px, 4.6vw, 58px); line-height: 1.15; }
+  .v1 h2 { font-family: "Noto Serif TC", serif; }
+  .v2 h2 { color: var(--v2-gold); }
+  .v3 h2 { font-weight: 700; letter-spacing: 0.06em; }
+  .v .tag { margin: 8px 0 0; font-size: 19px; font-weight: 700; }
+  .v h3 { margin: 30px 0 6px; font-size: 15px; letter-spacing: 0.14em; font-weight: 900; }
+  .v1 h3 { color: #6b4b00; } .v2 h3 { color: var(--v2-gold); } .v3 h3 { color: var(--v3-ember); }
+  .v p, .v li { max-width: 38em; }
+  .v p { margin: 0; }
+  .story { font-size: 18px; border-left: 3px solid currentColor; padding-left: 16px; }
+  .v ul { margin: 0; padding-left: 1.2em; }
+  .v li + li { margin-top: 4px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+  .links a { text-decoration: none; font-weight: 700; padding: 12px 20px; border-radius: 6px; min-height: 48px; display: inline-flex; align-items: center; }
+  .v1 .links a { background: var(--v1-ink); color: var(--v1); }
+  .v1 .links a + a { background: transparent; color: var(--v1-ink); box-shadow: inset 0 0 0 2px var(--v1-ink); }
+  .v2 .links a { background: var(--v2-gold); color: #1a1010; }
+  .v2 .links a + a { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px #fff; }
+  .v3 .links a { background: var(--v3-ember); color: var(--v3); }
+  .v3 .links a + a { background: transparent; color: var(--v3-glaze); box-shadow: inset 0 0 0 1px var(--v3-glaze); }
+  @media (max-width: 860px) { .v-grid { grid-template-columns: 1fr; } .v figure { position: static; } }
+
+  footer { padding: clamp(48px, 7vw, 96px) 0; color: var(--muted); font-size: 15px; }
+  footer h2 { color: var(--text); font-size: 22px; margin: 0 0 12px; }
+  footer ul { padding-left: 1.2em; margin: 0; }
+  footer li + li { margin-top: 6px; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>蒜串屋 網站風格提案</h1>
+  <p>同一間店、三種說故事的方式。三版都已經上線，可以直接點進去用手機或電腦操作看看。每一版的客群、品牌故事和特色都整理在下面，選一個最像你想開的那間店。</p>
+  <nav class="jump" aria-label="跳到">
+    <a href="#v1">第一版・招牌點菜單</a>
+    <a href="#v2">第二版・鹹酥雞攤玻璃櫃</a>
+    <a href="#v3">第三版・樂燒煙燻</a>
+  </nav>
+</header>
+
+<section class="wrap" aria-labelledby="cmp">
+  <div class="scroll">
+  <table>
+    <caption id="cmp">三版一眼比較</caption>
+    <thead><tr><th scope="col"></th><th scope="col">第一版・招牌點菜單</th><th scope="col">第二版・鹹酥雞攤玻璃櫃</th><th scope="col">第三版・樂燒煙燻</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">定位</th><td>平價、親切的串燒炸物居酒屋</td><td>熱鬧、好玩的台味宵夜攤</td><td>師傅手藝的高級炭火串燒</td></tr>
+      <tr><th scope="row">主要客群</th><td>東區上班族、學生、宵夜族</td><td>學生、年輕人、朋友聚會</td><td>約會情侶、上班族、觀光客</td></tr>
+      <tr><th scope="row">價格感</th><td>一串 35 元起・生啤暢飲 399</td><td>一串 35 元起・生啤暢飲 399</td><td>套餐 12 品 NT$980・單點 90 元起</td></tr>
+      <tr><th scope="row">網站最想讓客人做的事</th><td>知道有開、導航過來、看菜單</td><td>夾菜進籃子、導航過來</td><td>線上訂位、再導航過來</td></tr>
+      <tr><th scope="row">招牌互動</th><td>可以勾選的點菜單，自動算總價</td><td>點托盤飛進紅色籃子、老闆三問、號碼牌</td><td>往下捲，眼前那一串就在火上「燒紅」</td></tr>
+      <tr><th scope="row">風格關鍵字</th><td>黃色燈箱、手寫點菜單、親切</td><td>日光燈、不鏽鋼、紅籃子、台味</td><td>黑陶、冰裂釉、炭火橘、毛筆字</td></tr>
+      <tr><th scope="row">中・英・日</th><td>✓</td><td>✓</td><td>✓</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section class="v v1" id="v1" aria-labelledby="v1-h">
+  <div class="wrap v-grid">
+    <figure><img src="previews/v1.jpg" alt="第一版首頁：黃色燈箱招牌與炭火串燒照片" loading="lazy"><figcaption>第一版首頁（電腦版）</figcaption></figure>
+    <div>
+      <h2 id="v1-h">第一版・招牌點菜單</h2>
+      <p class="tag">台式蒜香炸物，配炭火串燒，開到半夜。</p>
+      <h3>想抓的客群</h3>
+      <p>台北東區下班的上班族、學生和宵夜族。他們在手機上快速比較：現在有沒有開、離捷運多遠、一串多少錢。這一版用最直接的方式回答這三件事。</p>
+      <h3>品牌故事</h3>
+      <p class="story">台北的夜晚有兩種香味：鹹酥雞攤起鍋前爆的那把蒜，和居酒屋炭火上滴油的串燒。以前要分兩家吃，現在放在同一張桌上。網站就像店裡那張粉紅色的複寫點菜單：紅色印刷、藍色原子筆打勾，每個台灣人都填過，一看就懂、一點就會。</p>
+      <h3>網站特色</h3>
+      <ul>
+        <li>首頁是一面黃色燈箱招牌，馬上看到「營業中・今晚到 01:30」</li>
+        <li>「蒜、炭、夜、涼」四個大字，一次講完店的賣點</li>
+        <li>可以打勾的點菜單：勾選品項自動算小計，到店按「放大給店員看」直接點餐</li>
+        <li>台啤綠的暢飲區、Google 地圖、一鍵導航與撥號</li>
+        <li>常見問題、誠實的 Google 評論邀請、中英日三語</li>
+      </ul>
+      <h3>最適合</h3>
+      <p>想走平價、穩定經營在地熟客，網站要「清楚、好用、不花俏」的老闆。</p>
+      <div class="links"><a href="v1/">打開第一版</a><a href="v1/en/">English</a><a href="v1/ja/">日本語</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="v v2" id="v2" aria-labelledby="v2-h">
+  <div class="wrap v-grid">
+    <figure><img src="previews/v2.jpg" alt="第二版首頁：紅色燈箱招牌、日光燈管與鹹酥雞攤玻璃櫃" loading="lazy"><figcaption>第二版首頁（電腦版）</figcaption></figure>
+    <div>
+      <h2 id="v2-h">第二版・鹹酥雞攤玻璃櫃</h2>
+      <p class="tag">整個網站就是一座亮著燈的鹹酥雞攤。</p>
+      <h3>想抓的客群</h3>
+      <p>學生和年輕人，晚上跟朋友在外面，用手機決定下一攤去哪。他們在意 CP 值、現在有沒有開、好不好拍、值不值得分享到 IG。</p>
+      <h3>品牌故事</h3>
+      <p class="story">每個台灣人都記得那個畫面：日光燈下的不鏽鋼玻璃櫃，拿起夾子和紅色塑膠籃，把想吃的一樣一樣夾進去，交給老闆，然後聽他問：「要辣嗎？蒜要嗎？九層塔？」蒜串屋把這個儀式原封不動搬進有冷氣的店裡，再加上居酒屋的炭火。不用在路邊流汗排隊，夾菜的樂趣一樣不少。</p>
+      <h3>網站特色</h3>
+      <ul>
+        <li>紅底黃字燈箱招牌，招牌下的日光燈管有開店才會亮，打開網頁時會閃一下</li>
+        <li>玻璃櫃托盤：點一下食材就飛進紅色籃子，價格牌夾上紅夾子、寫上「×2」</li>
+        <li>「老闆會問你三件事」：辣度、蒜、九層塔，答案直接寫在號碼牌上</li>
+        <li>號碼牌：中文大字給老闆看，英文日文頁也一樣，觀光客點餐不卡關</li>
+        <li>冰箱門上的暢飲貼紙、「算算我離多遠」、手機版底部固定「籃子＋導航」</li>
+      </ul>
+      <h3>最適合</h3>
+      <p>想做平價高流量、靠學生和社群口碑衝人氣，網站要「好玩到想截圖」的老闆。</p>
+      <div class="links"><a href="v2/">打開第二版</a><a href="v2/en/">English</a><a href="v2/ja/">日本語</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="v v3" id="v3" aria-labelledby="v3-h">
+  <div class="wrap v-grid">
+    <figure><img src="previews/v3.jpg" alt="第三版首頁：黑色底、毛筆字店名與炭火冒煙的照片" loading="lazy"><figcaption>第三版首頁（電腦版）</figcaption></figure>
+    <div>
+      <h2 id="v3-h">第三版・樂燒煙燻</h2>
+      <p class="tag">炭火串燒，加一道台式蒜香。火候，是師傅一串一串顧出來的。</p>
+      <h3>想抓的客群</h3>
+      <p>約會的情侶、想好好吃一頓的上班族，以及找台北特色燒鳥的日本與外國觀光客。客單價約 NT$600–1,000，多半會先訂位。</p>
+      <h3>品牌故事</h3>
+      <p class="story">一串好的串燒，是一段火候的紀錄。炭燒到表面發白才開始烤；聽油滴下去的聲音決定翻面；離火靜置幾秒，讓肉汁回到中心；烤好就上，不讓它在盤子上等。在 12 品的串燒套餐中間，師傅藏了一道台灣的驚喜：鹹酥雞的蒜香與九層塔，用燒鳥的精細度重新做一次。網站的樣子取自日本樂燒：燒紅的陶器放進煙裡急冷，黑陶與冰裂釉之間，只有正在火上的東西是橘紅的。</p>
+      <h3>網站特色</h3>
+      <ul>
+        <li>毛筆字店名與一筆炭火橘的筆觸，左側固定「今晚・營業中・到 01:30」</li>
+        <li>「火候四段」：上火、翻面、離火、上桌，用來證明師傅手藝</li>
+        <li>套餐 12 品：往下捲時，眼前那一串會燒紅，旁邊同步換成照片與做法（火位、秒數、調味）；每一串都有自己的網址，可以分享給約會對象</li>
+        <li>蒜在燒紅的炭上、約會氣氛段落「兩個人，一壺冷酒，炭火的光。」</li>
+        <li>釉白單點菜單、深色地圖、以線上訂位為主要行動</li>
+      </ul>
+      <h3>最適合</h3>
+      <p>想把店做成中高價、訂位制、適合約會和觀光客的老闆。注意：這一版的菜單與價格是另外設計的高級版本。</p>
+      <div class="links"><a href="v3/">打開第三版</a><a href="v3/en/">English</a><a href="v3/ja/">日本語</a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <h2>選之前要知道的事</h2>
+  <ul>
+    <li>店名「蒜串屋」、地址、電話、訂位與社群連結目前都是暫定的假資料；選定後換成真的，三版都改同一個地方。</li>
+    <li>網站照片都是 Unsplash 的示意照片，開幕後要換成店內實拍。</li>
+    <li>價格是依台北市場調查訂的建議價；第三版的火候、秒數與做法也是示意，要請師傅確認。</li>
+    <li>這個預覽網址設定為不被 Google 收錄。正式上線時會放到餐廳自己的網域，SEO 設定才會生效。</li>
+    <li>參考資料：<a href="https://github.com/NF6124034/suankushi-sites/blob/main/docs/市場研究_台北炸物串燒.md">台北炸物串燒市場研究</a>、<a href="https://github.com/NF6124034/suankushi-sites/blob/main/docs/上線與SEO操作手冊.md">上線與 SEO 操作手冊</a></li>
+  </ul>
+</footer>
+</body>
+</html>
